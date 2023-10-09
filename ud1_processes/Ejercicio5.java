@@ -5,16 +5,18 @@ import java.util.Scanner;
 
 public class Ejercicio5 {
     public static void main(String[] args) throws IOException {
-        Scanner sc = new Scanner(System.in);
+
+        // We ask the user to type the numbers
+        /*Scanner sc = new Scanner(System.in);
         System.out.print("Escribe un numero: ");
-        int num1 = sc.nextInt();
+        String num1 = sc.nextLine();
         System.out.print("Escribe otro numero: ");
-        int num2 = sc.nextInt();
+        String num2 = sc.nextLine();*/
+        String num1 = "4";
+        String num2 = "50";
 
-        System.out.println( System.getProperty("user.dir"));
-
-        ProcessBuilder pb = new ProcessBuilder("java","-cp",".","C:\\Users\\sergi\\IdeaProjects\\PSP_2023-24\\out\\production\\PSP_2023-24\\ud1_processes\\Sumador", " "+num1, " "+num2);
+        ProcessBuilder pb = new ProcessBuilder("java","Sumador", num1, num2);
         pb.inheritIO();
-        Process p = pb.start();
+        pb.start();
     }
 }
