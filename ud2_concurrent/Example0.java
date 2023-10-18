@@ -13,6 +13,11 @@ public class Example0 {
         Thread thread2 = new Thread(runnable);
         thread2.start();
 
+        // Simulate an interruption
+        /*Thread.sleep(3000);
+        thread1.interrupt();
+        thread2.interrupt();*/
+
         thread1.join();
         thread2.join();
 
