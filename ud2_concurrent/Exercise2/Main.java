@@ -3,6 +3,7 @@ package ud2_concurrent.Exercise2;
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         Counter c = new Counter();
+        Counter c2 = new Counter();
 
         Thread t1 = new Thread(new Worker(c));
         Thread t2 = new Thread(new Worker(c));
