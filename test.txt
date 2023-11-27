@@ -7,6 +7,14 @@ Adaptador de Ethernet Ethernet:
    Estado de los medios. . . . . . . . . . . : medios desconectados
    Sufijo DNS espec¡fico para la conexi¢n. . : 
 
+Adaptador de Ethernet Ethernet 2:
+
+   Sufijo DNS espec¡fico para la conexi¢n. . : 
+   V¡nculo: direcci¢n IPv6 local. . . : fe80::ad90:468e:46e9:49fa%3
+   Direcci¢n IPv4. . . . . . . . . . . . . . : 192.168.56.1
+   M scara de subred . . . . . . . . . . . . : 255.255.255.0
+   Puerta de enlace predeterminada . . . . . : 
+
 Adaptador de LAN inal mbrica Conexi¢n de  rea local* 9:
 
    Estado de los medios. . . . . . . . . . . : medios desconectados
@@ -20,7 +28,7 @@ Adaptador de LAN inal mbrica Conexi¢n de  rea local* 10:
 Adaptador de LAN inal mbrica Wi-Fi:
 
    Sufijo DNS espec¡fico para la conexi¢n. . : 
-   V¡nculo: direcci¢n IPv6 local. . . : fe80::626:e3dc:aabc:2435%5
-   Direcci¢n IPv4. . . . . . . . . . . . . . : 192.168.5.101
+   V¡nculo: direcci¢n IPv6 local. . . : fe80::626:e3dc:aabc:2435%6
+   Direcci¢n IPv4. . . . . . . . . . . . . . : 192.168.5.135
    M scara de subred . . . . . . . . . . . . : 255.255.255.0
    Puerta de enlace predeterminada . . . . . : 192.168.5.1
