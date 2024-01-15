@@ -1,11 +1,11 @@
-package ud3_parallel.exerciseStream_1;
+package ud3_parallel.exerciseStream;
 import java.util.List;
 import java.util.OptionalDouble;
 import java.util.OptionalInt;
 import java.util.stream.Collectors;
 
 import static java.util.Arrays.asList;
-public class Main {
+public class exercise2_1 {
     public static void main(String[] args) {
         List<String> names = asList("John", "Jack", "Jacob");
 
@@ -36,6 +36,13 @@ public class Main {
                 .filter(n -> n%2==0)
                 .forEach(System.out::println);
 
+        // In a different way
+        System.out.println("Exercise 2.1.4 (Alternative way)");
+        List<Integer> evens = numbers.stream()
+                .filter(n -> n%2==0)
+                .collect(Collectors.toList());
+        evens.forEach(System.out::println);
+
         // Exercise 2.1.5
         System.out.println("Exercise 2.1.5");
         Integer suma = numbers.stream()
@@ -45,6 +52,12 @@ public class Main {
         OptionalDouble avg = numbers.stream()
                 .mapToInt(x -> x)
                 .average();
+
+        // If you don't want to use de Optional Double
+        Double avg2 = numbers.stream()
+                .mapToInt(x -> x)
+                .average()
+                .orElse(0);
 
         OptionalInt min = numbers.stream()
                 .mapToInt(x -> x)
